@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nav"
+    app:startDestination="@id/eventAvailableFragment">
+
+    <fragment
+        android:id="@+id/eventAvailableFragment"
+        android:name="com.example.dicodingevents.ui.EventAvailableFragment"
+        android:label="fragment_event_available"
+        tools:layout="@layout/fragment_event_available" >
+        <action
+            android:id="@+id/action_eventAvailableFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment">
+            <argument
+                android:name="eventId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.example.dicodingevents.ui.EventDetailFragment"
+        android:label="fragment_event_detail"
+        tools:layout="@layout/fragment_event_detail" />
+    <fragment
+        android:id="@+id/eventNotAvailableFragment"
+        android:name="com.example.dicodingevents.ui.EventNotAvailableFragment"
+        android:label="fragment_event_not_available"
+        tools:layout="@layout/fragment_event_not_available" >
+        <action
+            android:id="@+id/action_eventNotAvailableFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment">
+            <argument
+                android:name="eventId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+</navigation>

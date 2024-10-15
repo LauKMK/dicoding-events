@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_event_available"
+        android:icon="@drawable/baseline_edit_calendar_24"
+        android:title="@string/title_available" />
+
+    <item
+        android:id="@+id/navigation_event_not_available"
+        android:icon="@drawable/baseline_done_24"
+        android:title="@string/title_notavailable" />
+</menu>
